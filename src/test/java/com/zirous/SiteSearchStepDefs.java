@@ -22,6 +22,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 
+/**
+ * Cucumber Step Definitions for the SiteSearch.feature.
+ */
 public class SiteSearchStepDefs implements En {
 
     static final String ZIROUS_URL = "https://www.zirous.com/";
@@ -84,6 +87,7 @@ public class SiteSearchStepDefs implements En {
 
     }
 
+    // Convenience method for better code readability.
     private WebDriverWait _wait(long timeoutSeconds) {
         return new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
     }
